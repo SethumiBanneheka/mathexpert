@@ -1,0 +1,46 @@
+<html>
+    <head>
+      <title>Additiontest</title>
+      <Script>
+       function check(qN,ans){
+	var q=document.getElementById(qN);
+        if (q.value==ans){
+		q.classList.remove("default-color");
+  		q.classList.add("green-color");
+	} else {
+		q.classList.remove("default-color");
+		q.classList.add("red-color");
+	}
+                                                        }
+
+    function addCheck(){
+           check("q1",5);
+           check("q2",11);
+        }
+                   
+      </Script>
+        <link rel="stylesheet" href="mystyle.css">
+	
+    </head>
+    <body>
+      <h1 style="font-family:Arial;"><u><center>Addition</u></center></h1>
+     <form>
+      <ol type="i">
+        <li>  2 + 3 = <input type="text" id="q1" class="default-color"></li>
+        <li>  5 + 6 = <input type="text" id="q2" class="default-color"></li>
+        
+
+
+
+
+      </ol>
+        <button type="button" onclick="addCheck()">Check</button>
+
+    </form>
+
+    </body>
+
+
+
+
+</html>
